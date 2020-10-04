@@ -1,4 +1,4 @@
-/* RESET */
+/* RESET HTML*/
 * {
     margin: 0;
     padding: 0;
@@ -12,4 +12,41 @@
 
 img {
     max-width: 100%;
+}
+
+/* APLICANDO ESTILO PADRÃO */
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+/* VARIÁVEIS DAS CORES PRINCIPAIS*/
+:root {
+    /* Primaria */
+
+    /* introdução e fundo de inscrição no e-mail */
+    --introduction-dark-blue: #1c2431;
+    /* fundo principal */
+    --bg-main-dark-blue: #181f2a;
+    /* fundo do rodapé */
+    --bg-footer-dark-blue: #0b1523;
+    /* fundo de depoimentos */
+    --bg-depositions-dark-blue: #202a3c;
+
+    /* Acentuar */
+    --cyan: #65e2d9;
+    --blue: #339ecc;
+
+    /* Neutra */
+    --white: #ffffff;
 }
