@@ -50,3 +50,27 @@ a {
     /* Neutra */
     --white: #ffffff;
 }
+
+/* INICIANDO ESTRUTURA GRID */
+/* CONTAINER */
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "header"
+        "content"
+        "footer"
+    ;
+}
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
