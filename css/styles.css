@@ -21,6 +21,7 @@ body {
     font-weight: 400;
     font-size: 0.875rem;
     background-color: var(--bg-main-dark-blue);
+    color: var(--white);
 }
 
 h1,
@@ -70,6 +71,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 70px 80px;
+    height: 200px;
 }
 
 .header ul {
@@ -97,4 +99,61 @@ a {
 
 .footer {
     grid-area: footer;
+    height: 515px;
+    background-color: var(--bg-footer-dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.footer div {
+    display: flex;
+    margin-top: 20px;
+}
+
+.logo-footer{
+    width: 100%;
+    padding-left: 80px;
+}
+
+.location img {
+    height: 20px;
+}
+
+.location p {
+    margin-left: 25px;
+    max-width: 325px;
+    line-height: 1.5rem;
+}
+
+.contact {
+    margin-left: 95px;
+    margin-right: 145px;
+    display: flex;
+    max-width: 170px;
+    flex-wrap: wrap;
+    height: 90px;
+}
+
+.contact img{
+    height: 18px;
+    margin-right: 20px;
+}
+
+.help {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+}
+
+.help p {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.social-networks img {
+    align-self: flex-start;
+    margin-left: 10px;
 }
