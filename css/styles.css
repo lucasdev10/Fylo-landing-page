@@ -103,8 +103,8 @@ a {
     grid-template-areas:
         "intro intro intro"
         "benefits benefits benefits"
-        "benefits benefits benefits"
-        "benefits benefits benefits"
+        "info info info"
+        "comments comments comments"
     ;
 }
 
@@ -149,10 +149,10 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 160px;
+    margin-top: 120px;
 }
 
-.benefits-box{
+.benefits-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,15 +160,66 @@ a {
     margin-bottom: 60px;
 }
 
-.benefits-item{
+.benefits-item {
     width: 400px;
     text-align: center;
     margin: 0 60px;
 }
 
-.benefits-item h3{
+.benefits-item h3 {
     margin-top: 25px;
     margin-bottom: 10px;
+}
+
+/* info */
+.info {
+    grid-area: info;
+    display: flex;
+    padding: 0 100px;
+}
+
+.info-image {
+    width: 50%;
+}
+
+.info-image img {
+    width: 90%;
+}
+
+.info-box {
+    width: 50%;
+    padding: 80px 30px;
+}
+
+.info-box h2 {
+    font-size: 1.875rem;
+    max-width: 320px;
+    margin-bottom: 30px;
+}
+
+.info-box p {
+    margin-bottom: 25px;
+}
+
+.info-box a {
+    color: var(--cyan);
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--cyan);
+}
+
+.info-box a {
+    color: var(--cyan);
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--cyan);
+}
+
+.info-box img {
+    margin-left: 3px;
+}
+
+/* comments */
+.comments {
+    grid-area: comments;
 }
 
 /* FOOTER */
