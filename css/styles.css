@@ -102,13 +102,14 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
         "intro intro intro"
-        "intro intro intro"
-        "intro intro intro"
-        "intro intro intro"
+        "benefits benefits benefits"
+        "benefits benefits benefits"
+        "benefits benefits benefits"
     ;
 }
 
-.intro{
+/* intro */
+.intro {
     grid-area: intro;
     display: flex;
     flex-direction: column;
@@ -133,12 +134,41 @@ a {
     font-weight: 400;
 }
 
-.btn-page{
+.btn-page {
     padding: 20px 100px;
     background-color: var(--blue);
     border-radius: 40px;
     color: var(--white);
     font-weight: 700;
+}
+
+/* benefits */
+.benefits {
+    grid-area: benefits;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 160px;
+}
+
+.benefits-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.benefits-item{
+    width: 400px;
+    text-align: center;
+    margin: 0 60px;
+}
+
+.benefits-item h3{
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 /* FOOTER */
@@ -187,11 +217,11 @@ a {
     margin-right: 20px;
 }
 
-.contact a{
+.contact a {
     color: var(--white);
 }
 
-.contact a:hover{
+.contact a:hover {
     color: var(--blue);
 }
 
