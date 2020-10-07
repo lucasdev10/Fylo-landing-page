@@ -105,6 +105,7 @@ a {
         "benefits benefits benefits"
         "info info info"
         "comments comments comments"
+        "sign-up sign-up sign-up"
     ;
 }
 
@@ -140,6 +141,11 @@ a {
     border-radius: 40px;
     color: var(--white);
     font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-page:hover{
+    background-color: var(--cyan);
 }
 
 /* benefits */
@@ -226,7 +232,7 @@ a {
     position: relative;
     gap: 35px;
     margin-top: 180px;
-    margin-bottom: 360px;
+    margin-bottom: 200px;
 }
 
 .comments>img {
@@ -240,8 +246,9 @@ a {
     z-index: 2;
     width: 360px;
     height: 200px;
+    border-radius: 5px;
     background-color: var(--bg-depositions-dark-blue);
-    box-shadow: 2px 2px 4px 0 var(--bg-depositions-dark-blue);
+    box-shadow: 3px 3px 1px 5px var(--bg-depositions-dark-blue);
 }
 
 .comments-box img {
@@ -267,12 +274,55 @@ a {
     font-weight: 400;
 }
 
-.people p + p{
+.people p+p {
     font-size: 0.6rem;
+}
+
+/* sign-up */
+.sign-up {
+    grid-area: sign-up;
+    height: 275px;
+    width: 865px;
+    background-color: #1c2230;
+    box-shadow: 3px 3px 1px 5px #1c2230;
+    margin: 0 auto -110px auto;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.sign-up h2 {
+    font-size: 1.687rem;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.sign-up p {
+    text-align: center;
+    padding: 30px 125px;
+}
+
+.sign-up div {
+    padding: 0 80px;
+}
+
+.sign-up div input {
+    padding: 20px 40px;
+    background-color: var(--white);
+    border-radius: 40px;
+    width: 480px;
+}
+
+.sign-up div button {
+    width: 200px;
+    height: 58px;
+    margin-left: 20px;
+    padding: 0;
 }
 
 /* FOOTER */
 .footer {
+    z-index: 1;
     grid-area: footer;
     height: 515px;
     background-color: var(--bg-footer-dark-blue);
