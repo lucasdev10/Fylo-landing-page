@@ -98,7 +98,7 @@ a {
 .content {
     grid-area: content;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
         "intro intro intro"
@@ -220,6 +220,55 @@ a {
 /* comments */
 .comments {
     grid-area: comments;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 35px;
+    margin-top: 180px;
+    margin-bottom: 360px;
+}
+
+.comments>img {
+    position: absolute;
+    top: -35px;
+    left: 85px;
+    z-index: 1;
+}
+
+.comments-box {
+    z-index: 2;
+    width: 360px;
+    height: 200px;
+    background-color: var(--bg-depositions-dark-blue);
+    box-shadow: 2px 2px 4px 0 var(--bg-depositions-dark-blue);
+}
+
+.comments-box img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.comments-box>p {
+    padding: 40px 25px 25px 25px;
+}
+
+.people {
+    display: flex;
+    align-items: center;
+}
+
+.people img {
+    margin-left: 25px;
+}
+
+.people p {
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.people p + p{
+    font-size: 0.6rem;
 }
 
 /* FOOTER */
