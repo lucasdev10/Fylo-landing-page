@@ -72,7 +72,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 70px 80px;
-    height: 200px;
+    flex-wrap: wrap;
 }
 
 .header ul {
@@ -118,6 +118,16 @@ a {
     align-items: center;
 }
 
+.intro div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.intro div img {
+    width: 50%;
+}
+
 .intro h1 {
     font-size: 1.875rem;
     margin-top: 40px;
@@ -144,7 +154,7 @@ a {
     cursor: pointer;
 }
 
-.btn-page:hover{
+.btn-page:hover {
     background-color: var(--cyan);
 }
 
@@ -167,9 +177,9 @@ a {
 }
 
 .benefits-item {
-    width: 400px;
+    max-width: 400px;
     text-align: center;
-    margin: 0 60px;
+    margin: 0 5%;
 }
 
 .benefits-item h3 {
@@ -181,11 +191,16 @@ a {
 .info {
     grid-area: info;
     display: flex;
-    padding: 0 100px;
+    padding: 0 8%;
+    margin-top: 3%;
 }
 
 .info-image {
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .info-image img {
@@ -194,7 +209,7 @@ a {
 
 .info-box {
     width: 50%;
-    padding: 80px 30px;
+    padding: 10% 2%;
 }
 
 .info-box h2 {
@@ -205,6 +220,7 @@ a {
 
 .info-box p {
     margin-bottom: 25px;
+    max-width: 510px;
 }
 
 .info-box a {
@@ -227,37 +243,38 @@ a {
 .comments {
     grid-area: comments;
     display: flex;
-    align-items: center;
     justify-content: center;
+    gap: 4%;
+    margin: 18% 5% 22% 5%;
     position: relative;
-    gap: 35px;
-    margin-top: 180px;
-    margin-bottom: 200px;
 }
 
-.comments>img {
+.quotes{
+    height: 45px;
     position: absolute;
     top: -35px;
-    left: 85px;
+    left: 5px;
     z-index: 1;
 }
 
 .comments-box {
-    z-index: 2;
-    width: 360px;
-    height: 200px;
+    max-width: 360px;
+    min-height: 200px;
     border-radius: 5px;
     background-color: var(--bg-depositions-dark-blue);
     box-shadow: 3px 3px 1px 5px var(--bg-depositions-dark-blue);
+    z-index: 2;
 }
 
-.comments-box img {
-    height: 30px;
-    border-radius: 50%;
-}
+/* .comments-box>img {
+    position: absolute;
+    top: -35px;
+    left: -15px;
+    z-index: 1;
+} */
 
 .comments-box>p {
-    padding: 40px 25px 25px 25px;
+    padding: 13% 8% 10% 9%;
 }
 
 .people {
@@ -266,6 +283,8 @@ a {
 }
 
 .people img {
+    height: 30px;
+    border-radius: 50%;
     margin-left: 25px;
 }
 
@@ -281,8 +300,9 @@ a {
 /* sign-up */
 .sign-up {
     grid-area: sign-up;
-    height: 275px;
-    width: 865px;
+    min-height: 275px;
+    max-width: 865px;
+    width: 80%;
     background-color: #1c2230;
     box-shadow: 3px 3px 1px 5px #1c2230;
     margin: 0 auto -110px auto;
@@ -304,20 +324,24 @@ a {
 
 .sign-up div {
     padding: 0 80px;
+    display: flex;
+    align-items: center;
 }
 
 .sign-up div input {
     padding: 20px 40px;
     background-color: var(--white);
     border-radius: 40px;
-    width: 480px;
+    max-width: 480px;
+    width: 65%;
 }
 
 .sign-up div button {
-    width: 200px;
+    max-width: 200px;
+    width: 30%;
     height: 58px;
     margin-left: 20px;
-    padding: 0;
+    padding: 0 10px;
 }
 
 /* FOOTER */
@@ -333,14 +357,21 @@ a {
     padding-top: 100px;
 }
 
-.footer div {
+.logo-footer {
     display: flex;
-    margin-top: 20px;
+    width: 100%;
+    margin-left: 11%;
 }
 
-.logo-footer {
+.footer-box {
+    display: flex;
+    margin-top: 20px;
     width: 100%;
-    padding-left: 80px;
+    padding-left: 4%;
+}
+
+.location {
+    margin-left: 2%;
 }
 
 .location img {
@@ -348,14 +379,14 @@ a {
 }
 
 .location p {
-    margin-left: 25px;
+    margin-left: 12%;
     max-width: 325px;
     line-height: 1.5rem;
 }
 
 .contact {
-    margin-left: 95px;
-    margin-right: 145px;
+    margin-left: 7%;
+    margin-right: 10%;
     display: flex;
     max-width: 170px;
     flex-wrap: wrap;
@@ -364,7 +395,7 @@ a {
 
 .contact img {
     height: 18px;
-    margin-right: 20px;
+    margin-right: 6%;
 }
 
 .contact a {
@@ -398,5 +429,6 @@ a {
 
 .social-networks img {
     align-self: flex-start;
-    margin-left: 10px;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
